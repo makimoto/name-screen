@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title=@name
+    %script{:src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js', :type => 'text/javascript'}
+    :css
+      body{
+        background-color: white;
+      }
+      #wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -2em;
+        margin-left: -0.75em;
+        font-size: 128px;
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        height: 6em;
+        font-family: "ヒラギノ明朝 ProN W6","HiraMinProN-W6";
+      }
+  %body
+    スペース区切りで入力する。
+    %form
+      名前
+      %input#body{:name => 'body', :type => 'text'}
+      %br/
+      なまえ
+      %input#ruby{:name => 'ruby', :type => 'text'}
+      %br/
+      %input{:type => 'submit'}

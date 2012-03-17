@@ -22,6 +22,8 @@
   %body
     #wrapper
       -@body.zip(@ruby).each do |b,r|
-        %ruby
-          %rb=b ? b : ''
-          %rt=r ? r : ''
+        %ruby<>
+          %rb<>
+            =b ? b : ''
+          %rt<>
+            =r ? r : ''
